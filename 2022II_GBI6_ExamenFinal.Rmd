@@ -1,7 +1,7 @@
 ---
 title: "Bioinformática- GBI6"
 subtitle: "EXAMEN FINAL - 2022II"
-author: "APELLIDO, Nombre"
+author: "FARINANGO, ALLAN"
 date: "`r Sys.Date()`"
 output:
   html_document:
@@ -146,7 +146,15 @@ ggarrange(p3, ggarrange(p1, p2, labels =c("b", "c"), nrow=2),
 
 ### [1.0 punto] 1.1. Interprete lo que se muestra en la figura anterior
 
-**INTERPRETACIÓN**
+**Este código genera tres gráficos (p1, p2 y p3) y los combina en una sola figura usando ggarrange de la librería ggpubr.
+
+p1 es un gráfico de barras de error agrupadas con puntos con fluctuaciones que muestra la relación entre la longitud del pico y el sexo de tres especies diferentes de pingüinos. El eje x representa la especie, el eje y representa la longitud del pico y el color representa el sexo. La posición de los puntos está alterada para una mejor visibilidad.
+
+p2 es un boxplot que muestra la distribución del ancho de pico de las mismas tres especies de pingüinos que en p1.
+
+p3 es un scatterplot que muestra la relación entre la longitud del pico y el ancho del pico de todas las especies de pingüinos en una escala logarítmica. Los puntos se agrupan por especie y por isla. Además, el gráfico incluye la ecuación de la regresión lineal y el coeficiente de determinación ajustado ($R^2$).
+
+La función ggarrange combina estos tres gráficos en una sola figura, con p3 ocupando el espacio superior izquierdo y p1 y p2 compartiendo el espacio inferior derecho. La figura resultante está etiquetada como "a" en la esquina superior izquierda, mientras que p1 y p2 se etiquetan como "b" y "c", respectivamente. Se eliminó la leyenda en los gráficos con legend.position = "none".**
 
 ### [3.0 puntos] 1.2. Genere dos gráficas `p4` y `p5`donde: 
 
